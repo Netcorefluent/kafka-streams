@@ -1,2 +1,2 @@
 # kafka-streams
-Kafka Streams 🚀 + .NET Core 🧙‍♂️
+Kafka Streams 🚀 + .NET Core 🦄
