@@ -18,3 +18,13 @@ action "Build" {
   uses = "Azure/github-actions/dotnetcore-cli@master"
   args = "build"
 }
+
+workflow "Pull Request Status Checks" {
+  resolves = "PR Status Giphy"
+  on = "pull_request"
+}
+
+action "PR Status Giphy" {
+  uses = "jzweifel/pr-status-giphy-action@master"
+  secrets = ["GITHUB_TOKEN", "GIPHY_API_KEY"]
+}
