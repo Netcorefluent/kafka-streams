@@ -165,7 +165,7 @@ namespace Netcorefluent.KafkaStreams
         /// Note that this is a terminal operation that returns void.
         /// </summary>
         /// <param name="action"></param>
-        public void Foreach(Func<K, V> action)
+        public void Foreach(Action<K, V> action)
         {
             throw new NotImplementedException();
         }
